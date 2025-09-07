@@ -1,8 +1,14 @@
 # キキコミ - みんなで作る、やさしいレビュー
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR-NETLIFY-ID/deploy-status)](https://app.netlify.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-4.9-blue.svg)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-18.2-blue.svg)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-4.0-blue.svg)](https://vitejs.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 実際に購入した人だけの本音レビューで、コスメ・ファッション・家電まで安心してお買い物できるプラットフォームです。
 
-## 機能
+## 🌟 主な特徴
 
 - 🏆 **本物のレビューのみ**: 購入確認済みのレビューのみを表示
 - 💬 **コミュニティチャット**: 商品別のコミュニティで情報交換
@@ -10,7 +16,7 @@
 - ⭐ **ポイントシステム**: 貢献度に応じたポイント獲得
 - 📱 **レスポンシブデザイン**: スマートフォンからデスクトップまで対応
 
-## 技術スタック
+## 🚀 技術スタック
 
 - **フロントエンド**: React 18 + TypeScript
 - **ビルドツール**: Vite
@@ -19,7 +25,7 @@
 - **バックエンド**: Supabase (PostgreSQL + Auth + Realtime)
 - **デプロイ**: Netlify
 
-## 開発環境のセットアップ
+## 🔧 開発環境のセットアップ
 
 ### 必要な環境
 - Node.js 18以上
@@ -38,7 +44,7 @@ cp .env.example .env.local
 npm run dev
 ```
 
-## Supabaseの設定
+## 📦 Supabaseの設定
 
 ### 1. Supabaseプロジェクトの作成
 1. [Supabase](https://supabase.com)にアクセス
@@ -62,7 +68,8 @@ VITE_SUPABASE_ANON_KEY=your-anon-key
 2. Site URLに`http://localhost:5173`を追加
 3. Redirect URLsに`http://localhost:5173/**`を追加
 
-### 利用可能なスクリプト
+## 📝 利用可能なスクリプト
+
 ```bash
 # 開発サーバー起動
 npm run dev
@@ -77,7 +84,7 @@ npm run preview
 npm run lint
 ```
 
-## Netlifyでのデプロイ
+## 🚀 Netlifyでのデプロイ
 
 ### 方法1: Netlify CLIを使用
 
@@ -112,16 +119,7 @@ netlify deploy --prod --dir=dist
    - **Publish directory**: `dist`
 6. "Deploy site"をクリック
 
-### 方法3: ドラッグ&ドロップ
-
-1. プロジェクトをビルド
-```bash
-npm run build
-```
-
-2. `dist`フォルダを[Netlify](https://app.netlify.com/drop)にドラッグ&ドロップ
-
-## プロジェクト構造
+## 📁 プロジェクト構造
 
 ```
 src/
@@ -139,13 +137,27 @@ src/
 └── main.tsx           # エントリーポイント
 ```
 
-## 設定ファイル
+## ⚙️ 設定ファイル
 
 - `netlify.toml`: Netlify用の設定ファイル
 - `vite.config.ts`: Viteの設定
 - `tailwind.config.js`: Tailwind CSSの設定
 - `tsconfig.json`: TypeScriptの設定
 
-## ライセンス
+## 📄 ライセンス
 
 MIT License
+
+## 👥 コントリビューション
+
+プロジェクトへの貢献を歓迎します！以下の手順で参加できます：
+
+1. このリポジトリをフォーク
+2. 新しいブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m 'Add some amazing feature'`)
+4. ブランチにプッシュ (`git push origin feature/amazing-feature`)
+5. プルリクエストを作成
+
+## 📞 サポート
+
+問題や質問がある場合は、GitHubのIssueを作成してください。
